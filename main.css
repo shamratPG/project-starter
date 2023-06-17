@@ -11,10 +11,30 @@ html {
 }
 
 :root {
-    /*COLORS*/
+    /*colors*/
 
-    /* primary */
-    /* grey */
+    --primary-100: #dfe6f5;
+    --primary-200: #c0cdea;
+    --primary-300: #a0b3e0;
+    --primary-400: #819ad5;
+    --primary-500: #6181cb;
+    --primary-600: #4e67a2;
+    --primary-700: #3a4d7a;
+    --primary-800: #273451;
+    --primary-900: #131a29;
+
+    --grey-50: #f8fafc;
+    --grey-100: #f1f5f9;
+    --grey-200: #e2e8f0;
+    --grey-300: #cbd5e1;
+    --grey-400: #94a3b8;
+    --grey-500: #64748b;
+    --grey-600: #475569;
+    --grey-700: #334155;
+    --grey-800: #1e293b;
+    --grey-900: #0f172a;
+
+
     --black: #222;
     --white: #fff;
     --red-light: #f8d7da;
@@ -22,20 +42,33 @@ html {
     --green-light: #d1e7dd;
     --green-dark: #0f5132;
 
-
+    /*fonts*/
     --headingFont: 'Spectral', serif;
     --bodyFont: 'Karla', sans-serif;
     --smallText: 0.8rem;
+
+    /* other vars */
+    --borderRadius: 0.25rem;
+    --letterSpacing: 1px;
+    --transition: 0.3s ease-in-out all;
+    --maxWidth: 1120px;
+    --fixedWidth: 600px;
+
+    /* shadows */
+    --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 /*16px*/
 
 body {
-    background: white;
+    background: var(--grey-100);
     font-family: var(--bodyFont);
     font-weight: 400;
     line-height: 1.75;
-    color: #000000;
+    color: var(--grey-900);
 }
 
 p {
